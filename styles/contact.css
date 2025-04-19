@@ -1,0 +1,24 @@
+.contact-form-container {
+    @apply max-w-3xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-lg;
+}
+
+.contact-form-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-4 text-indigo-700;
+}
+
+.contact-form-intro {
+    @apply text-lg text-center text-gray-600 mb-8 md:mb-10;
+}
+
+.contact-form input,
+.contact-form textarea {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out sm:text-sm;
+}
+
+.contact-form label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.contact-submit-button {
+    @apply inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 shadow-md;
+}

@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.lang-button.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #4f46e5;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.icon-sm {
+    width: 1em;
+    height: 1em;
+}
+
+.icon-lg {
+    width: 6rem;
+    height: 6rem;
+}
+
+body {
+    @apply bg-gray-100 text-gray-800 antialiased flex flex-col min-h-screen;
+}
+
+nav {
+    @apply bg-white shadow-md sticky top-0 z-50 rounded-b-lg;
+}
