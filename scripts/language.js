@@ -1,6 +1,7 @@
 // Catálogo de traducciones a ES y EN
 const translations = {
     es: {
+        contactTitlePage: "Contacto - Marcos Díaz Oliva",
         navName: "Marcos Díaz Oliva",
         navAbout: "Sobre Mí",
         navProjects: "Proyectos",
@@ -74,6 +75,7 @@ const translations = {
         footerRights: "© 2025 Marcos Díaz Oliva. Todos los derechos reservados."
     },
     en: {
+        contactTitlePage: "Contact - Marcos Díaz Oliva",
         navName: "Marcos Díaz Oliva",
         navAbout: "About Me",
         navProjects: "Projects",
