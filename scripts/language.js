@@ -126,7 +126,7 @@ const translations = {
         skillsLangSpanish: "Spanish:",
         skillsLangSpanishLevel: "Native",
         skillsLangEnglish: "English:",
-        skillsLangEnglishLevel: "Fluido",
+        skillsLangEnglishLevel: "Fluent",
         skillsLangOther: "[Other Language]:",
         skillsLangOtherLevel: "[Level]",
         skillsToolsTitle: "Tools",
