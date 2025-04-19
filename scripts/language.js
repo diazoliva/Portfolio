@@ -67,6 +67,7 @@ const translations = {
         contactTitle: "Contacto",
         contactIntro: "¿Interesado/a en saber más? ¡No dudes en contactarme!",
         contactDownloadPrompt: "También puedes descargar mi CV:",
+        contactMail: "Contáctame",
         contactDownloadButtonES: "Descargar CV",
         contactDownloadButtonEN: "Descargar CV (Inglés)",
         footerRights: "2025 Marcos Díaz Oliva. Todos los derechos reservados."
@@ -138,6 +139,7 @@ const translations = {
         contactTitle: "Contact",
         contactIntro: "Interested in learning more? Feel free to contact me!",
         contactDownloadPrompt: "You can also download my CV:",
+        contactMail: "Contact me",
         contactDownloadButtonES: "Download CV (Spanish)",
         contactDownloadButtonEN: "Download CV",
         footerRights: "2025 Marcos Díaz Oliva. All rights reserved.",
