@@ -72,7 +72,9 @@ const translations = {
         contactMail: "Contáctame",
         contactDownloadButtonES: "Descargar CV",
         contactDownloadButtonEN: "Descargar CV (Inglés)",
-        footerRights: "© 2025 Marcos Díaz Oliva. Todos los derechos reservados."
+        footerRights: "© 2025 Marcos Díaz Oliva. Todos los derechos reservados.",
+        contactFormTitle: "Ponte en Contacto",
+        contactFormIntro: "¿Tienes alguna pregunta o propuesta? Rellena el formulario.",
     },
     en: {
         contactTitlePage: "Contact - Marcos Díaz Oliva",
