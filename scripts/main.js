@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- Scroll Suave para anclas ---
+    // Scroll Suave para anclas
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');

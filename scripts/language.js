@@ -1,3 +1,4 @@
+// Catálogo de traducciones a ES y EN
 const translations = {
     es: {
         navName: "Marcos Díaz Oliva",
@@ -70,7 +71,7 @@ const translations = {
         contactMail: "Contáctame",
         contactDownloadButtonES: "Descargar CV",
         contactDownloadButtonEN: "Descargar CV (Inglés)",
-        footerRights: "2025 Marcos Díaz Oliva. Todos los derechos reservados."
+        footerRights: "© 2025 Marcos Díaz Oliva. Todos los derechos reservados."
     },
     en: {
         navName: "Marcos Díaz Oliva",
@@ -142,7 +143,7 @@ const translations = {
         contactMail: "Contact me",
         contactDownloadButtonES: "Download CV (Spanish)",
         contactDownloadButtonEN: "Download CV",
-        footerRights: "2025 Marcos Díaz Oliva. All rights reserved.",
+        footerRights: "© 2025 Marcos Díaz Oliva. All rights reserved.",
         contactFormTitle: "Get in Touch",
         contactFormIntro: "Have a question or proposal? Fill out the form.",
     }
