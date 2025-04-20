@@ -18,5 +18,13 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "rimraf": "^6.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diazoliva/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diazoliva/Portfolio/issues"
+  },
+  "homepage": "https://github.com/diazoliva/Portfolio#readme"
 }
