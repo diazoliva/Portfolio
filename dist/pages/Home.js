@@ -12,7 +12,7 @@ export default function HomePage() {
              class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover">
         <h1 class="text-4xl md:text-5xl font-bold mb-2" data-lang="heroTitle">Hola, soy Marcos</h1>
         <p class="text-xl md:text-2xl mb-8" data-lang="heroSubtitle">Gestor de Proyectos Informáticos</p>
-        <a href="./contact.html" 
+        <a href="contact" 
            class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md" 
            data-lang="heroContactButton">Contáctame</a>
       </div>
@@ -193,7 +193,7 @@ export default function HomePage() {
                     ¿Interesado/a en saber más? ¡No dudes en contactarme!
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 mb-6">
-                     <a href="./contact.html" class="text-gray-600 hover:text-indigo-600 transition duration-300 flex items-center gap-2">
+                     <a href="contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 flex items-center gap-2">
                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/mail.svg" alt="Email" class="icon">
                          <span data-lang="contactMail">Contáctame</span>
                      </a>
