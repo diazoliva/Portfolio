@@ -24,6 +24,11 @@ section {
     height: 1em;
 }
 
+.icon-md {
+    width: 2em;
+    height: 2em;
+}
+
 .icon-lg {
     width: 6rem;
     height: 6rem;
