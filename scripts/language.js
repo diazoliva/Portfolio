@@ -184,12 +184,38 @@ function switchLanguage(lang) {
         button.classList.toggle('active', buttonLang === lang);
     });
 
+    // Mostrar/ocultar botones de CV según el idioma
+    const cvEsButton = document.getElementById('download-cv-es');
+    const cvEnButton = document.getElementById('download-cv-en');
+    if (cvEsButton && cvEnButton) {
+        if (lang === 'es') {
+            cvEsButton.classList.remove('hidden');
+            cvEnButton.classList.add('hidden');
+        } else {
+            cvEsButton.classList.add('hidden');
+            cvEnButton.classList.remove('hidden');
+        }
+    }
+
+    // Manejar formularios de contacto
+    const formEs = document.getElementById('form-es');
+    const formEn = document.getElementById('form-en');
+    if (formEs && formEn) {
+        if (lang === 'es') {
+            formEs.classList.remove('hidden');
+            formEn.classList.add('hidden');
+        } else {
+            formEs.classList.add('hidden');
+            formEn.classList.remove('hidden');
+        }
+    }
+
     // Guardar preferencia
     localStorage.setItem('preferredLanguage', lang);
 }
 
 // Establecer idioma inicial
-document.addEventListener('DOMContentLoaded', function() {
+function initializeLanguage() {
     const preferredLanguage = localStorage.getItem('preferredLanguage');
     if (preferredLanguage) {
         switchLanguage(preferredLanguage);
@@ -198,4 +224,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const langCode = browserLanguage.split('-')[0];
         switchLanguage(langCode === 'en' ? 'en' : 'es');
     }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initializeLanguage();
+    
+    // Añadir event listeners a los botones de idioma
+    document.querySelectorAll('.lang-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const lang = this.getAttribute('onclick').includes("'es'") ? 'es' : 'en';
+            switchLanguage(lang);
+        });
+    });
 });

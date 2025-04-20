@@ -8,15 +8,18 @@
     <link rel="icon" href="./assets/images/simple_logo.svg" type="image/icon type" class="fill-current">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body class="bg-gray-100 text-gray-800 antialiased flex flex-col min-h-screen">
-
     <nav class="bg-white shadow-md sticky top-0 z-50 rounded-b-lg">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="font-bold text-xl text-indigo-600" data-lang="navName">Tu Nombre</a>
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex justify-center items-center">
+                <img src="./assets/images/purple_logo.png" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2"/>
+                <div class="font-bold text-xl text-indigo-600" data-lang="navName">Marcos Díaz Oliva</div>
+            </a>
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="index.html#sobre-mi" class="text-gray-600 hover:text-indigo-600 transition duration-300 rounded-md px-3 py-2" data-lang="navAbout">Sobre Mí</a>
                 <a href="index.html#proyectos" class="text-gray-600 hover:text-indigo-600 transition duration-300 rounded-md px-3 py-2" data-lang="navProjects">Proyectos</a>
@@ -34,7 +37,7 @@
             </button>
         </div>
         <div id="mobile-menu" class="md:hidden hidden bg-white py-2 rounded-b-lg shadow-lg">
-             <a href="index.html#sobre-mi" class="block px-6 py-2 text-gray-600 hover:bg-indigo-50 rounded-md mx-2" data-lang="navAboutMobile">Sobre Mí</a>
+            <a href="index.html#sobre-mi" class="block px-6 py-2 text-gray-600 hover:bg-indigo-50 rounded-md mx-2" data-lang="navAboutMobile">Sobre Mí</a>
             <a href="index.html#proyectos" class="block px-6 py-2 text-gray-600 hover:bg-indigo-50 rounded-md mx-2" data-lang="navProjectsMobile">Proyectos</a>
             <a href="index.html#experiencia" class="block px-6 py-2 text-gray-600 hover:bg-indigo-50 rounded-md mx-2" data-lang="navExperienceMobile">Experiencia</a>
             <a href="index.html#habilidades" class="block px-6 py-2 text-gray-600 hover:bg-indigo-50 rounded-md mx-2" data-lang="navSkillsMobile">Habilidades</a>
@@ -46,7 +49,7 @@
             </div>
         </div>
     </nav>
-    <main class="container mx-auto px-6 py-16 md:py-24 flex-grow">
+    <main class="container mx-auto px-6 pb-40 md:pb-20 m-auto">
 
         <div class="max-w-3xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-lg">
 
@@ -65,7 +68,7 @@
                     <input type="text" name="nombre-completo" id="nombre-completo-es" required placeholder="Tu nombre y apellidos" data-lang-placeholder="contactPlaceholderName" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out sm:text-sm">
                 </div>
                 <div>
-                    <label for="correo-es" class="block text-sm font-medium text-gray-700 mb-1" data-lang="contactLabelEmail">Correo Electrónico</label>
+                    <label for="correo-es" class="block text-sm font-medium text-gray-700 mb-1" data-lang="contactLabelEmail">Correo electrónico</label>
                     <input type="email" name="correo" id="correo-es" required placeholder="tu@email.com" data-lang-placeholder="contactPlaceholderEmail" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out sm:text-sm">
                 </div>
                 <div>
@@ -81,7 +84,7 @@
                 </div>
                 <div class="text-center pt-4">
                     <button type="submit" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 shadow-md" data-lang="contactSubmitButton">
-                        Enviar Mensaje
+                        Enviar
                     </button>
                 </div>
             </form>
@@ -94,7 +97,7 @@
                     <input type="text" name="full-name" id="nombre-completo-en" required placeholder="Your first and last name" data-lang-placeholder="contactPlaceholderName" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out sm:text-sm">
                 </div>
                 <div>
-                    <label for="correo-en" class="block text-sm font-medium text-gray-700 mb-1" data-lang="contactLabelEmail">Email Address</label>
+                    <label for="correo-en" class="block text-sm font-medium text-gray-700 mb-1" data-lang="contactLabelEmail">Email address</label>
                     <input type="email" name="email" id="correo-en" required placeholder="you@email.com" data-lang-placeholder="contactPlaceholderEmail" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out sm:text-sm">
                 </div>
                 <div>
@@ -115,7 +118,8 @@
                 </div>
             </form>
 
-             </div> </main>
+             </div>
+            </main>
 
     <footer class="bg-gray-800 text-white py-6 rounded-t-lg">
         <div class="container mx-auto px-6 text-center">
@@ -128,6 +132,5 @@
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/language.js"></script>
-    <script src="scripts/contact.js"></script>
     </body>
 </html>
