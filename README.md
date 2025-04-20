@@ -16,21 +16,27 @@ Professional responsive portfolio with multilingual support (ES/EN) showcasing m
 
 ### ✨ Key Features
 
-- ✅ Fully responsive design
-- 🌍 Bilingual support (ES/EN)
-- 📝 Functional contact form
-- 🚀 Performance optimized
+- ✅ Fully responsive SPA (Single Page Application)
+- 🌍 Bilingual support (Spanish / English)
+- 📝 Functional contact form via Netlify
+- 🔁 Dynamic routing with JavaScript
+- 🌐 Language switcher stored in `localStorage`
+- 🎨 Tailwind CSS with JIT build pipeline
 - 📱 Interactive mobile menu
-- ✨ Modern visual effects
+- ⚡ Smooth scroll and page transitions
+- 📊 Analytics ready (Google Analytics)
+- 🧠 Modular structure and clean codebase
 
 ### 🛠 Technology Stack
 
-| Frontend          | Backend         | Tools            |
-|-------------------|-----------------|------------------|
-| Semantic HTML5    | Netlify Forms   | Git + GitHub     |
-| Tailwind CSS      |                 | Lucide Icons     |
-| JavaScript ES6+   |                 | Google Analytics |
-| Responsive Design |                 | Figma (Design)   |
+| Frontend           | Backend         | Tooling            |
+|--------------------|-----------------|--------------------|
+| Semantic HTML5     | Netlify Forms   | Git + GitHub       |
+| Tailwind CSS (CLI) |                 | Lucide Icons       |
+| JavaScript ES6+    |                 | Google Analytics   |
+| SPA + Routing      |                 | Figma (Design)     |
+| Modules + ESM      |                 | Netlify Hosting    |
+| i18n support       |                 | PostCSS / CLI      |
 
 ### 📂 Project Structure
 
@@ -48,25 +54,29 @@ Professional responsive portfolio with multilingual support (ES/EN) showcasing m
 │   ├── Footer.js
 │   ├── LanguageSwitcher.js
 │   └── Navbar.js
+├── dist/
 ├── github/
 │   └── preview_EN.png
 ├── pages/
 │   ├── Contact.js
 │   └── Home.js
 ├── scripts/
+│   ├── language.js
 │   └── main.js
 ├── styles/
-│   ├── components/
-│   │   ├── contact.css
-│   │   ├── footer.css
-│   │   └── navbar.css
 │   ├── base.css
+│   ├── output.css
 │   └── utilities.css
 ├── utils/
 │   ├── constants.js
 │   └── language.js
+├── _redirects
+├── _redirects
 ├── App.js
 ├── index.html
+├── router.html
+├── package-lock.json
+├── package.json
 └── Readme.md
 ```
 
@@ -86,21 +96,27 @@ Portfolio profesional responsive con soporte multidioma (ES/EN) que muestra mi e
 
 ### ✨ Características
 
-- ✅ Diseño 100% responsive
-- 🌍 Soporte bilingüe (ES/EN)
-- 📝 Formulario de contacto funcional
-- 🚀 Optimizado para rendimiento
+- ✅ SPA 100% responsive (Single Page Application)
+- 🌍 Soporte bilingüe (Español / Inglés)
+- 📝 Formulario de contacto funcional vía Netlify
+- 🔁 Ruteo dinámico con JavaScript
+- 🌐 Cambiador de idioma persistente en `localStorage`
+- 🎨 Tailwind CSS con compilación JIT
 - 📱 Menú móvil interactivo
-- ✨ Efectos visuales modernos
+- ⚡ Transiciones suaves y scroll automático
+- 📊 Preparado para analítica (Google Analytics)
+- 🧠 Estructura modular y código limpio
 
 ### 🛠 Stack Tecnológico
 
-| Frontend          | Backend         | Herramientas       |
-|-------------------|-----------------|--------------------|
-| HTML5 Semántico   | Netlify Forms   | Git + GitHub       |
-| Tailwind CSS      |                 | Lucide Icons       |
-| JavaScript ES6+   |                 | Google Analytics   |
-| Responsive Design |                 | Figma (Diseño)     |
+| Frontend              | Backend         | Herramientas          |
+|-----------------------|-----------------|-----------------------|
+| HTML5 Semántico       | Netlify Forms   | Git + GitHub          |
+| Tailwind CSS (CLI)    |                 | Lucide Icons          |
+| JavaScript ES6+       |                 | Google Analytics      |
+| SPA + Ruteo           |                 | Figma (Diseño)        |
+| Módulos + ESM         |                 | Hosting en Netlify    |
+| Soporte multilenguaje |                 | PostCSS / CLI         |
 
 ### 📂 Estructura del Proyecto
 
@@ -118,25 +134,29 @@ Portfolio profesional responsive con soporte multidioma (ES/EN) que muestra mi e
 │   ├── Footer.js
 │   ├── LanguageSwitcher.js
 │   └── Navbar.js
+├── dist/
 ├── github/
 │   └── preview_EN.png
 ├── pages/
 │   ├── Contact.js
 │   └── Home.js
 ├── scripts/
+│   ├── language.js
 │   └── main.js
 ├── styles/
-│   ├── components/
-│   │   ├── contact.css
-│   │   ├── footer.css
-│   │   └── navbar.css
 │   ├── base.css
+│   ├── output.css
 │   └── utilities.css
 ├── utils/
 │   ├── constants.js
 │   └── language.js
+├── _redirects
+├── _redirects
 ├── App.js
 ├── index.html
+├── router.html
+├── package-lock.json
+├── package.json
 └── Readme.md
 ```
 
