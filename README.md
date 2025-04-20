@@ -36,22 +36,38 @@ Professional responsive portfolio with multilingual support (ES/EN) showcasing m
 
 ```bash
 .
-├── index.html          # Index page
-├── contact.html        # Contact page
 ├── assets/
-│   ├── css/            # CSS files
-│   │   ├── main.css
-│   │   └── contact.css
-│   └── js/            # JavaScript files
-│       ├── main.js
-│       ├── language.js
-│       └── contact.js
-├── documents/          # Downloadable files
-│   ├── CV_ES.pdf
-│   └── CV_EN.pdf
-└── images/             # Visual assets
-    ├── preview.jpg
-    └── personal.jpg
+│   ├── documents/
+│   │   ├── CV_ES.pdf
+│   │   └── CV_EN.pdf
+│   └── images/
+│       ├── preview.jpg
+│       └── personal.jpg
+├── components/
+│   ├── ContactForm.js
+│   ├── Footer.js
+│   ├── LanguageSwitcher.js
+│   └── Navbar.js
+├── github/
+│   └── preview_EN.png
+├── pages/
+│   ├── Contact.js
+│   └── Home.js
+├── scripts/
+│   └── main.js
+├── styles/
+│   ├── components/
+│   │   ├── contact.css
+│   │   ├── footer.css
+│   │   └── navbar.css
+│   ├── base.css
+│   └── utilities.css
+├── utils/
+│   ├── constants.js
+│   └── language.js
+├── App.js
+├── index.html
+└── Readme.md
 ```
 
 ### 🚀 Getting Started
@@ -90,22 +106,38 @@ Portfolio profesional responsive con soporte multidioma (ES/EN) que muestra mi e
 
 ```bash
 .
-├── index.html          # Página principal
-├── contact.html        # Página de contacto
 ├── assets/
-│   ├── css/            # Hojas de estilo
-│   │   ├── main.css
-│   │   └── contact.css
-│   └── js/            # Scripts
-│       ├── main.js
-│       ├── language.js
-│       └── contact.js
-├── documents/          # Archivos descargables
-│   ├── CV_ES.pdf
-│   └── CV_EN.pdf
-└── images/             # Recursos visuales
-    ├── preview.jpg
-    └── personal.jpg
+│   ├── documents/
+│   │   ├── CV_ES.pdf
+│   │   └── CV_EN.pdf
+│   └── images/
+│       ├── preview.jpg
+│       └── personal.jpg
+├── components/
+│   ├── ContactForm.js
+│   ├── Footer.js
+│   ├── LanguageSwitcher.js
+│   └── Navbar.js
+├── github/
+│   └── preview_EN.png
+├── pages/
+│   ├── Contact.js
+│   └── Home.js
+├── scripts/
+│   └── main.js
+├── styles/
+│   ├── components/
+│   │   ├── contact.css
+│   │   ├── footer.css
+│   │   └── navbar.css
+│   ├── base.css
+│   └── utilities.css
+├── utils/
+│   ├── constants.js
+│   └── language.js
+├── App.js
+├── index.html
+└── Readme.md
 ```
 
 ### 🚀 Comienzo

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-test",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/b343c240-35a9-41ef-b748-ee5bc2a65fe6/deploy-status)](https://app.netlify.com/sites/curious-elf-e83b01/deploys)\r ![GitHub last commit](https://img.shields.io/github/last-commit/diazoliva/portfolio)\r ![GitHub repo size](https://img.shields.io/github/repo-size/diazoliva/portfolio)",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./styles/base.css -o ./styles/output.css --minify",
+    "export": "npm run build && rimraf dist && mkdir dist && copyfiles \"index.html\" \"App.js\" \"router.js\" \"assets/**/*\" \"components/**/*\" \"pages/**/*\" \"scripts/**/*\" \"styles/output.css\" \"styles/utilities\" \"utils/**/*\" \"_redirects\" dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1"
+  }
+}

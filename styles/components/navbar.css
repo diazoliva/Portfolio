@@ -1,0 +1,11 @@
+nav {
+  @apply bg-white shadow-md sticky top-0 z-50 rounded-b-lg;
+}
+
+#mobile-menu {
+  @apply xl:hidden hidden bg-white py-2 rounded-b-lg shadow-lg;
+}
+
+.lang-button.active {
+  @apply font-bold underline text-indigo-600;
+}
