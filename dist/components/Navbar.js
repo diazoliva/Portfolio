@@ -7,12 +7,12 @@ export default function Navbar() {
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="/" class="flex justify-center items-center">
                 <img src="./assets/images/purple_logo.png" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2"/>
-                <div class="font-bold text-xl text-indigo-600" data-lang="navName">Marcos Díaz Oliva</div>
+                <div class="font-bold text-xl text-indigo-800" data-lang="navName">Marcos Díaz Oliva</div>
             </a>
         
             <div class="hidden xl:flex space-x-6 items-center">
                 ${NAV_LINKS.map(link => `
-                    <a href="${link.href}" class="text-gray-600 hover:text-indigo-600 transition duration-300 rounded-md px-3 py-2" data-lang="${link.langKey}">
+                    <a href="${link.href}" class="text-gray-600 hover:text-indigo-900 transition duration-300 rounded-md px-3 py-2" data-lang="${link.langKey}">
                     ${link.text}
                     </a>
                 `).join('')}
@@ -20,11 +20,11 @@ export default function Navbar() {
                 <LanguageSwitcher />
             </div>
             <div class="max-xl:hidden flex items-center space-x-2-200 pl-4">
-                <button class="lang-button text-sm text-gray-500 hover:text-indigo-600 px-2 cursor-pointer active" data-lang-switch="es">
+                <button class="lang-button text-sm text-gray-500 hover:text-indigo-900 px-2 cursor-pointer active" data-lang-switch="es">
                     ES
                 </button>
                 <span class="text-gray-300">|</span>
-                <button class="lang-button text-sm text-gray-500 hover:text-indigo-600 px-2 cursor-pointer" data-lang-switch="en">
+                <button class="lang-button text-sm text-gray-500 hover:text-indigo-900 px-2 cursor-pointer" data-lang-switch="en">
                     EN
                 </button>
             </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
         
         <div class="mt-2 pt-2 border-t border-gray-100 text-center">
           ${LANGUAGES.map(lang => `
-            <button class="lang-button text-sm text-gray-500 hover:text-indigo-600 px-2 cursor-pointer ${lang.code === 'es' ? 'active' : ''}" 
+            <button class="lang-button text-sm text-gray-500 hover:text-indigo-900 px-2 cursor-pointer ${lang.code === 'es' ? 'active' : ''}" 
                     data-lang-switch="${lang.code}">
               ${lang.name}
             </button>

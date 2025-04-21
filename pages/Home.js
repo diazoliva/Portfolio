@@ -13,14 +13,14 @@ export default function HomePage() {
         <h1 class="text-4xl md:text-5xl font-bold mb-2" data-lang="heroTitle">Hola, soy Marcos</h1>
         <p class="text-xl md:text-2xl mb-8" data-lang="heroSubtitle">Gestor de Proyectos Informáticos</p>
         <a href="contact" 
-           class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md" 
+           class="bg-white text-indigo-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md" 
            data-lang="heroContactButton">Contáctame</a>
       </div>
     </header>
 
     <main class="container mx-auto px-6 pt-4 pb-6 flex-grow">
         <section id="sobre-mi" class="mb-4 pt-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700" data-lang="aboutTitle">Sobre Mí</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800" data-lang="aboutTitle">Sobre Mí</h2>
             <div class="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-2/3">
                     <p class="text-lg" data-lang="aboutParagraph1">
@@ -28,13 +28,13 @@ export default function HomePage() {
                     </p>
                 </div>
                  <div class="md:w-1/3 flex justify-center">
-                     <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/user.svg" alt="Usuario" class="icon icon-lg text-indigo-500">
+                     <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/user.svg" alt="Usuario" class="icon icon-lg text-indigo-800">
                  </div>
             </div>
         </section>
 
         <section id="proyectos" class="mb-4 pt-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700" data-lang="projectsTitle">Proyectos Destacados</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800" data-lang="projectsTitle">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
                     <img src="https://placehold.co/600x400/e0e7ff/4f46e5?text=Proyecto+1" alt="[Imagen de Proyecto 1]" data-lang-alt="project1AltImage" class="w-full h-48 object-cover">
@@ -43,10 +43,10 @@ export default function HomePage() {
                         <p class="text-gray-600 mb-4" data-lang="project1Desc">
                             Desarrollado con Laravel, PHP, MySQL, MongoDB.
                         </p>
-                        <a href="#" class="text-indigo-600 hover:underline font-medium inline-flex items-center">
+                        <a href="#" class="text-indigo-900 hover:underline font-medium inline-flex items-center">
                             <span data-lang="projectSeeMore">Ver más</span> <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/arrow-right.svg" alt="Ver más" class="icon icon-sm ml-1">
                         </a>
-                         <a href="#" class="text-gray-500 hover:text-indigo-600 ml-4 inline-flex items-center" title="Código Fuente" data-lang-title="projectSourceCode">
+                         <a href="#" class="text-gray-500 hover:text-indigo-900 ml-4 inline-flex items-center" title="Código Fuente" data-lang-title="projectSourceCode">
                              <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/github.svg" alt="GitHub" class="icon">
                          </a>
                     </div>
@@ -58,10 +58,10 @@ export default function HomePage() {
                         <p class="text-gray-600 mb-4" data-lang="project2Desc">
                             Desarrollado con Python, Xampp, MySQL.
                         </p>
-                        <a href="#" class="text-indigo-600 hover:underline font-medium inline-flex items-center">
+                        <a href="#" class="text-indigo-900 hover:underline font-medium inline-flex items-center">
                              <span data-lang="projectSeeMore">Ver más</span> <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/arrow-right.svg" alt="Ver más" class="icon icon-sm ml-1">
                         </a>
-                         <a href="#" class="text-gray-500 hover:text-indigo-600 ml-4 inline-flex items-center" title="Código Fuente" data-lang-title="projectSourceCode">
+                         <a href="#" class="text-gray-500 hover:text-indigo-900 ml-4 inline-flex items-center" title="Código Fuente" data-lang-title="projectSourceCode">
                              <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/github.svg" alt="GitHub" class="icon">
                          </a>
                     </div>
@@ -73,10 +73,10 @@ export default function HomePage() {
                         <p class="text-gray-600 mb-4" data-lang="project3Desc">
                             [Breve descripción del proyecto, tecnologías usadas y tu rol.]
                         </p>
-                        <a href="#" class="text-indigo-600 hover:underline font-medium inline-flex items-center">
+                        <a href="#" class="text-indigo-900 hover:underline font-medium inline-flex items-center">
                              <span data-lang="projectSeeMore">Ver más</span> <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/arrow-right.svg" alt="Ver más" class="icon icon-sm ml-1">
                         </a>
-                         <a href="#" class="text-gray-500 hover:text-indigo-600 ml-4 inline-flex items-center" title="Código Fuente" data-lang-title="projectSourceCode">
+                         <a href="#" class="text-gray-500 hover:text-indigo-900 ml-4 inline-flex items-center" title="Código Fuente" data-lang-title="projectSourceCode">
                              <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/github.svg" alt="GitHub" class="icon">
                          </a>
                     </div>
@@ -85,10 +85,10 @@ export default function HomePage() {
         </section>
 
         <section id="experiencia" class="mb-4 pt-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700" data-lang="experienceTitle">Experiencia Profesional</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800" data-lang="experienceTitle">Experiencia Profesional</h2>
             <div class="space-y-8">
                 <div class="bg-white p-6 rounded-lg shadow-md flex gap-4 items-start">
-                    <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/briefcase.svg" alt="Experiencia" class="icon text-indigo-500 mt-1 flex-shrink-0">
+                    <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/briefcase.svg" alt="Experiencia" class="icon text-indigo-800 mt-1 flex-shrink-0">
                     <div>
                         <h3 class="text-xl font-semibold mb-1" data-lang="exp1Title">Gestor de proyectos informáticos - Ministerio de Vivienda y Agenda Urbana</h3>
                         <p class="text-gray-500 text-sm mb-2" data-lang="exp1Dates">Octubre 2024 - Actualidad</p>
@@ -103,7 +103,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md flex gap-4 items-start">
-                     <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/briefcase.svg" alt="Experiencia" class="icon text-indigo-500 mt-1 flex-shrink-0">
+                     <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/briefcase.svg" alt="Experiencia" class="icon text-indigo-800 mt-1 flex-shrink-0">
                     <div>
                         <h3 class="text-xl font-semibold mb-1" data-lang="exp3Title">Gestor de Sistemas Informáticos en Prácticas - Instituto Nacional de Administración Pública</h3>
                         <p class="text-gray-500 text-sm mb-2" data-lang="exp3Dates">Junio 2024 - Octubre 2024</p>
@@ -114,7 +114,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md flex gap-4 items-start">
-                    <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/briefcase.svg" alt="Experiencia" class="icon text-indigo-500 mt-1 flex-shrink-0">
+                    <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/briefcase.svg" alt="Experiencia" class="icon text-indigo-800 mt-1 flex-shrink-0">
                     <div>
                         <h3 class="text-xl font-semibold mb-1" data-lang="exp2Title">Analista Programador Backend - VC Land</h3>
                         <p class="text-gray-500 text-sm mb-2" data-lang="exp2Dates">Noviembre 2021 - Febrero 2023</p>
@@ -128,7 +128,7 @@ export default function HomePage() {
         </section>
 
         <section id="habilidades" class="mb-4 pt-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700" data-lang="skillsTitle">Habilidades</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800" data-lang="skillsTitle">Habilidades</h2>
             <div class="bg-white p-8 rounded-lg shadow-md">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
@@ -187,32 +187,32 @@ export default function HomePage() {
         </section>
 
         <section id="contacto" class="mb-4 pt-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700" data-lang="contactTitle">Contacto</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800" data-lang="contactTitle">Contacto</h2>
             <div class="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto text-center">
                 <p class="text-lg mb-6" data-lang="contactIntro">
                     ¿Interesado/a en saber más? ¡No dudes en contactarme!
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 mb-6">
-                     <a href="contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 flex items-center gap-2">
+                     <a href="contact" class="text-gray-600 hover:text-indigo-900 transition duration-300 flex items-center gap-2">
                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/mail.svg" alt="Email" class="icon">
                          <span data-lang="contactMail">Contáctame</span>
                      </a>
-                     <a href="https://www.linkedin.com/in/marcos-diaz-oliva/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition duration-300 flex items-center gap-2">
+                     <a href="https://www.linkedin.com/in/marcos-diaz-oliva/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-900 transition duration-300 flex items-center gap-2">
                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/linkedin.svg" alt="LinkedIn" class="icon">
                          LinkedIn
                      </a>
-                     <a href="https://github.com/diazoliva" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition duration-300 flex items-center gap-2">
+                     <a href="https://github.com/diazoliva" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-900 transition duration-300 flex items-center gap-2">
                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/github.svg" alt="GitHub" class="icon">
                          GitHub
                      </a>
                      </div>
                  <p class="text-gray-500 mb-4" data-lang="contactDownloadPrompt">También puedes descargar mi CV:</p>
                  <div class="flex justify-center gap-4">
-                    <a id="download-cv-es" href="./assets/documents/CV_ES.pdf" download="CV_Marcos_ES.pdf" class="items-center justify-center bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">
+                    <a id="download-cv-es" href="./assets/documents/CV_ES.pdf" download="CV_Marcos_ES.pdf" class="items-center justify-center bg-indigo-800 text-white px-5 py-2 rounded-lg hover:bg-indigo-900 transition duration-300 shadow-md">
                         <span data-lang="contactDownloadButtonES" class="mr-2">Descargar CV</span>
                         <i class="fas fa-download"></i>
                     </a>
-                    <a id="download-cv-en" href="./assets/documents/CV_EN.pdf" download="CV_Marcos_EN.pdf" class="items-center justify-center bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">
+                    <a id="download-cv-en" href="./assets/documents/CV_EN.pdf" download="CV_Marcos_EN.pdf" class="items-center justify-center bg-indigo-800 text-white px-5 py-2 rounded-lg hover:bg-indigo-900 transition duration-300 shadow-md">
                         <span data-lang="contactDownloadButtonEN" class="mr-2">Download CV</span>
                         <i class="fas fa-download"></i>
                     </a>
