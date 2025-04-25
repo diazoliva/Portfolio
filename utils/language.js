@@ -80,8 +80,8 @@ function updateMetaDescription(lang = document.documentElement.lang) {
     document.head.appendChild(meta);
   }
   const content = lang === 'en'
-    ? 'Descubre el portfolio de Marcos Díaz Oliva en inglés: proyectos en IT project management, backend y optimización de sistemas. Explora mi biografía y contáctame.'
-    : 'Portfolio of Marcos Díaz Oliva, specialized in IT project management, development, and systems optimization. Explore my biography and contact me.';
+    ? 'Portfolio of Marcos Díaz Oliva, specialized in IT project management, development, and systems optimization. Explore my biography and contact me.'
+    : 'Portafolio de Marcos Díaz Oliva, especializado en gestión de proyectos TIC, desarrollo y optimización de sistemas. Explora mi biografía y contáctame.';
   meta.setAttribute('content', content);
 }
 
