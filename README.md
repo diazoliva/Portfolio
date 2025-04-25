@@ -47,8 +47,6 @@ Professional responsive portfolio with multilingual support (ES/EN) showcasing m
 │   │   ├── CV_ES.pdf
 │   │   └── CV_EN.pdf
 │   └── images/
-│       ├── preview.jpg
-│       └── personal.jpg
 ├── components/
 │   ├── ContactForm.js
 │   ├── Footer.js
@@ -127,8 +125,6 @@ Portfolio profesional responsive con soporte multidioma (ES/EN) que muestra mi e
 │   │   ├── CV_ES.pdf
 │   │   └── CV_EN.pdf
 │   └── images/
-│       ├── preview.jpg
-│       └── personal.jpg
 ├── components/
 │   ├── ContactForm.js
 │   ├── Footer.js

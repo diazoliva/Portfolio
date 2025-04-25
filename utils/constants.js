@@ -13,7 +13,7 @@ export const LANGUAGES = [
 
 export const translations = {
   es: {
-    contactTitlePage: "Contacto - Marcos Díaz Oliva",
+    contactTitlePage: "Marcos Díaz Oliva - Contacto",
     navName: "Marcos Díaz Oliva",
     navAbout: "Sobre Mí",
     navProjects: "Proyectos",

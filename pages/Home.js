@@ -5,10 +5,10 @@ export default function HomePage() {
   return `
     ${Navbar()}
 
-    <header style="background-image:linear-gradient(rgba(99, 97, 100, 0.9), rgba(110, 102, 197, 0.9)), url(./assets/images/MIVAU.jpg)" 
+    <header style="background-image:linear-gradient(rgba(99, 97, 100, 0.9), rgba(110, 102, 197, 0.9)), url(./assets/images/MIVAU.webp)" 
             class="bg-cover py-20 rounded-b-xl shadow-xl bg-no-repeat bg-size-cover text-white">
       <div class="container mx-auto px-6 text-center">
-        <img src="./assets/images/personal.jpg" alt="Foto personal" data-lang-alt="heroAltImage" 
+        <img src="./assets/images/personal.webp" alt="Foto personal" data-lang-alt="heroAltImage" 
              class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover">
         <h1 class="text-4xl md:text-5xl font-bold mb-2" data-lang="heroTitle">Hola, soy Marcos</h1>
         <p class="text-xl md:text-2xl mb-8" data-lang="heroSubtitle">Gestor de Proyectos Informáticos</p>

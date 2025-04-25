@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav class="bg-white shadow-md sticky top-0 z-50 rounded-b-lg">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="/" class="flex justify-center items-center">
-                <img src="./assets/images/purple_logo.png" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2"/>
+                <img src="./assets/images/purple_logo.webp" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2"/>
                 <div class="font-bold text-xl text-indigo-800" data-lang="navName">Marcos Díaz Oliva</div>
             </a>
         

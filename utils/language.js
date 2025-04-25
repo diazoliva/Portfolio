@@ -8,6 +8,7 @@ export function switchLanguage(lang) {
   toggleContactForms(lang);
   toggleCVButtons(lang);
   saveLanguagePreference(lang);
+  updateMetaDescription(lang);
 }
 
 function updateTextElements(lang) {
@@ -65,6 +66,23 @@ function toggleCVButtons(lang) {
 
 function saveLanguagePreference(lang) {
   localStorage.setItem('preferredLanguage', lang);
+}
+  
+/**
+ * Actualiza o crea la etiqueta <meta name="description"> según el idioma.
+ * @param {string} lang Código de idioma ('es' o 'en').
+ */
+function updateMetaDescription(lang = document.documentElement.lang) {
+  let meta = document.querySelector('meta[name="description"]');
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.name = 'description';
+    document.head.appendChild(meta);
+  }
+  const content = lang === 'en'
+    ? 'Descubre el portfolio de Marcos Díaz Oliva en inglés: proyectos en IT project management, backend y optimización de sistemas. Explora mi biografía y contáctame.'
+    : 'Portfolio of Marcos Díaz Oliva, specialized in IT project management, development, and systems optimization. Explore my biography and contact me.';
+  meta.setAttribute('content', content);
 }
 
 export function initializeLanguage() {

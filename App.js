@@ -4,15 +4,13 @@ import {setupSmoothScrolling, setupMobileMenu, setupLanguageSwitch} from './scri
 import {initializeLanguage, switchLanguage} from './utils/language.js';
 
 window.switchLanguage = switchLanguage;
-
-document.title = "Marcos Díaz Oliva - Portfolio";
 const app = document.getElementById('app');
 
 const loadCommonStyles = () => {
   const head = document.head;
   const favicon = document.createElement('link');
   favicon.rel = 'icon';
-  favicon.href = './assets/images/simple_logo.svg';
+  favicon.href = './assets/images/simple_logo.webp';
   favicon.type = 'image/icon type';
 
   const preconnect1 = document.createElement('link');

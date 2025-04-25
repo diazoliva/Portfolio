@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm.js';
 
 export default function ContactPage() {
   return `
-    ${Navbar()}
+    ${Navbar(true)}
     
     <main class="container mx-auto px-6 pt-5 md:pt-10 pb-10 md:pb-10 flex-grow">
       <div class="max-w-3xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-lg">
