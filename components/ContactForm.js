@@ -1,25 +1,25 @@
 export default function ContactForm() {
   return `
-    <form id="form-es" name="contact-es" method="POST" netlify class="space-y-6">
+    <form id="form-es" name="contact-es" method="POST" netlify class="space-y-6" autocomplete="on">
       <input type="hidden" name="form-name" value="contact-es" />
       <div>
         <label for="nombre-completo-es" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
-        <input type="text" name="nombre-completo" id="nombre-completo-es" required placeholder="Tu nombre y apellidos" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm">
+        <input type="text" name="nombre-completo" id="nombre-completo-es" autocomplete="name" required placeholder="Tu nombre y apellidos" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm">
       </div>
       <div>
         <label for="correo-es" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
-        <input type="email" name="correo" id="correo-es" required placeholder="tu@email.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm">
+        <input type="email" name="correo" id="correo-es" autocomplete="email" required placeholder="tu@email.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm">
       </div>
       <div>
         <label for="telefono-es" class="block text-sm font-medium text-gray-700 mb-1">
           <span>Número de teléfono</span>
           <span class="text-xs text-gray-500">(Opcional)</span>
         </label>
-        <input type="tel" name="telefono" id="telefono-es" placeholder="+34 600 000 000" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm">
+        <input type="tel" name="telefono" id="telefono-es" autocomplete="tel" placeholder="+34 600 000 000" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm">
       </div>
       <div>
         <label for="mensaje-es" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
-        <textarea id="mensaje-es" name="mensaje" rows="5" required placeholder="Escribe aquí tu consulta o mensaje..." class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm"></textarea>
+        <textarea id="mensaje-es" name="mensaje" autocomplete="off" rows="5" required placeholder="Escribe aquí tu consulta o mensaje..." class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 focus:border-indigo-800 transition duration-150 ease-in-out sm:text-sm"></textarea>
       </div>
       <div class="text-center pt-4">
         <button type="submit" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-800 hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-800 transition duration-300 shadow-md cursor-pointer">
