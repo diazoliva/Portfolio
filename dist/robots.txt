@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+# Opcional: bloquear directorios que no aportan valor SEO
+# Disallow: /scripts/
+# Disallow: /utils/
+# Disallow: /styles/
+# Disallow: /pages/
+# Disallow: /assets/
+# Disallow: /components/
+
 Sitemap: https://portfolio.diazoliva.com/sitemap.xml

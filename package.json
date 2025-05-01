@@ -4,21 +4,16 @@
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/b343c240-35a9-41ef-b748-ee5bc2a65fe6/deploy-status)](https://app.netlify.com/sites/curious-elf-e83b01/deploys)\r ![GitHub last commit](https://img.shields.io/github/last-commit/diazoliva/portfolio)\r ![GitHub repo size](https://img.shields.io/github/repo-size/diazoliva/portfolio)",
   "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./styles/base.css -o ./styles/output.css --minify",
-    "export": "npm run build && rimraf dist && mkdir dist && copyfiles \"index.html\" \"App.js\" \"router.js\" \"assets/**/*\" \"components/**/*\" \"pages/**/*\" \"scripts/**/*\" \"styles/output.css\" \"styles/utilities.css\" \"utils/**/*\" \"_redirects\" \"sitemap.xml\" \"robots.txt\" dist"
+    "build:css": "tailwindcss --config ./tailwind.config.js -i ./styles/input.css -o ./styles/output.css --minify",
+    "build": "npm run build:css",
+    "watch:css": "tailwindcss --config ./tailwind.config.js -i ./styles/input.css -o ./styles/output.css --watch",
+    "export": "rimraf dist && mkdir dist && copyfiles \"index.html\" \"App.js\" \"router.js\" \"assets/**/*\" \"components/**/*\" \"pages/**/*\" \"scripts/**/*\" \"styles/output.css\" \"styles/utilities.css\" \"utils/**/*\" \"_redirects\" \"sitemap.xml\" \"robots.txt\" dist",
+    "start:dev": "npm run build && npm run export && npx serve . -s",
+    "start": "npm run build && npm run export && npx serve ./dist -s"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.4",
-    "tailwindcss": "^4.1.4"
-  },
-  "devDependencies": {
-    "copyfiles": "^2.4.1",
-    "rimraf": "^6.0.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diazoliva/Portfolio.git"
@@ -26,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/diazoliva/Portfolio/issues"
   },
-  "homepage": "https://github.com/diazoliva/Portfolio#readme"
+  "homepage": "https://github.com/diazoliva/Portfolio#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1"
+  }
 }

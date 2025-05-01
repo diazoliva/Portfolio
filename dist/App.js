@@ -2,17 +2,20 @@ import HomePage from './pages/Home.js';
 import routes from './router.js';
 import {setupSmoothScrolling, setupMobileMenu, setupLanguageSwitch} from './scripts/main.js';
 import {initializeLanguage, switchLanguage} from './utils/language.js';
+import { initDarkMode, toggleDarkMode, setupThemeToggle } from './utils/theme.js';
+
+
+// para poder llamarlo desde el HTML
+window.toggleDarkMode = toggleDarkMode;
 
 window.switchLanguage = switchLanguage;
-
-document.title = "Marcos Díaz Oliva - Portfolio";
 const app = document.getElementById('app');
 
 const loadCommonStyles = () => {
   const head = document.head;
   const favicon = document.createElement('link');
   favicon.rel = 'icon';
-  favicon.href = './assets/images/simple_logo.svg';
+  favicon.href = './assets/images/simple_logo.webp';
   favicon.type = 'image/icon type';
 
   const preconnect1 = document.createElement('link');
@@ -60,6 +63,8 @@ export const loadPage = async () => {
   setupSmoothScrolling();
   initializeLanguage();
   setupLanguageSwitch();
+  initDarkMode();
+  setupThemeToggle();
 
   // Forzar reflujo para que la transición entre
   void app.offsetWidth;

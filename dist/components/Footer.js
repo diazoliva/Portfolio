@@ -1,8 +1,8 @@
 export default function Footer() {
   return `
-    <footer class="bg-gray-800 text-white py-6 rounded-t-lg">
+    <footer class="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-6 rounded-t-lg transition-colors duration-300">
       <div class="container mx-auto px-6 text-center">
-        <div class="container flex justify-center">
+        <div class="flex justify-center">
           <p data-lang="footerRights">
             © ${new Date().getFullYear()} Marcos Díaz Oliva. Todos los derechos reservados.
           </p>
