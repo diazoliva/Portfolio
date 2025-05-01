@@ -11,7 +11,7 @@ export default function HomePage() {
             <img src="./assets/images/personal.webp" alt="Foto personal" data-lang-alt="heroAltImage" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover"/>
             <h1 class="text-4xl md:text-5xl font-bold mb-2" data-lang="heroTitle"> Hola, soy Marcos </h1>
             <p class="text-xl md:text-2xl mb-8" data-lang="heroSubtitle"> Gestor de Proyectos Informáticos </p>
-            <a href="contact" class="bg-white text-indigo-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md"> Contáctame </a>
+            <a href="contact" class="bg-white text-indigo-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md" data-lang="heroContactButton"> Contáctame </a>
             <a href="#sobre-mi" class="block mx-auto mt-12 cursor-pointer animate-bounce text-3xl text-white dark:text-gray-200">
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
