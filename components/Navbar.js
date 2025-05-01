@@ -30,19 +30,14 @@ export default function Navbar(isMenuHidden) {
         ` : ''}
 
         <div class="hidden xl:flex items-center space-x-2-200 pl-4">
-          <label for="theme-toggle" class="relative inline-block w-20 h-10 cursor-pointer ml-4">
-            <input type="checkbox" id="theme-toggle" class="sr-only"/>
-            <!-- Track -->
-            <div class="absolute inset-0 rounded-full bg-yellow-200 dark:bg-blue-900 transition-colors duration-300 ease-in-out"></div>
-            <!-- Knob -->
-            <div class="absolute left-1 top-1 w-8 h-8 rounded-full bg-yellow-400 dark:bg-blue-400 transform transition-all duration-300 ease-in-out dark:translate-x-10 relative">
-              <!-- Sun -->
-              <i class="fas fa-sun absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-base transition-opacity duration-200 ease-in-out opacity-100 dark:opacity-0"></i>
-              <!-- Moon -->
-              <i class="fas fa-moon absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-base transition-opacity duration-200 ease-in-out opacity-0 dark:opacity-100"></i>
-            </div>
-          </label>
-
+        <label class="relative inline-block w-16 h-8 cursor-pointer">
+          <input type="checkbox" class="sr-only theme-toggle" />
+          <div class="absolute inset-0 rounded-full bg-yellow-200 dark:bg-blue-900 transition-colors duration-300"></div>
+          <div class="toggle-knob absolute left-1 top-1 w-6 h-6 rounded-full bg-yellow-400 dark:bg-blue-400 transform transition-all duration-300 dark:translate-x-8">
+              <i class="fas fa-sun absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-base transition-opacity duration-200 ease-in-out opacity-100 dark:opacity-0 icon-sun"></i>
+              <i class="fas fa-moon absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-base transition-opacity duration-200 ease-in-out opacity-0 dark:opacity-100 icon-moon"></i>
+          </div>
+        </label>
           <div class="max-xl:hidden flex items-center space-x-2-200 pl-4">
             <button class="lang-button text-sm text-gray-500 dark:text-gray-400 hover:text-indigo-900 dark:hover:text-indigo-200 px-2 cursor-pointer active" data-lang-switch="es">ES</button>
             <span class="text-gray-300 dark:text-gray-600">|</span>
@@ -65,13 +60,27 @@ export default function Navbar(isMenuHidden) {
           </a>
         `).join('')}
       ` : ''}
-        <div class="mt-2 pt-2 border-t border-gray-100 dark:border-gray-700 text-center">
-          ${LANGUAGES.map(lang => `
-            <button class="lang-button text-sm text-gray-500 dark:text-gray-400 hover:text-indigo-900 dark:hover:text-indigo-200 px-2 cursor-pointer ${lang.code === 'es' ? 'active' : ''}" data-lang-switch="${lang.code}">
-              ${lang.code.toUpperCase()}
-            </button>
-            ${lang.code !== LANGUAGES[LANGUAGES.length-1].code ? '<span class="text-gray-300 dark:text-gray-600">|</span>' : ''}
-          `).join('')}
+      <div class="flex justify-center items-center space-x-2-200 pl-4">
+          <div class="flex mt-2 pt-2 border-t border-gray-100 dark:border-gray-700 text-center">
+          <div className="mt-2 pt-2 border-t border-gray-100 dark:border-gray-700 flex justify-center">
+            <label class="relative inline-block w-16 h-8 cursor-pointer">
+              <input type="checkbox" class="sr-only theme-toggle" />
+              <div class="absolute inset-0 rounded-full bg-yellow-200 dark:bg-blue-900 transition-colors duration-300"></div>
+              <div class="toggle-knob absolute left-1 top-1 w-6 h-6 rounded-full bg-yellow-400 dark:bg-blue-400 transform transition-all duration-300 dark:translate-x-8">
+                <i class="fas fa-sun absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-base transition-opacity duration-200 ease-in-out opacity-100 dark:opacity-0 icon-sun"></i>
+                <i class="fas fa-moon absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-base transition-opacity duration-200 ease-in-out opacity-0 dark:opacity-100 icon-moon"></i>
+              </div>
+            </label>
+          </div>
+          <div class="flex justify-center items-center space-x-2-200 pl-4 ml-2">
+            ${LANGUAGES.map(lang => `
+              <button class="lang-button text-sm text-gray-500 dark:text-gray-400 hover:text-indigo-900 dark:hover:text-indigo-200 px-2 cursor-pointer ${lang.code === 'es' ? 'active' : ''}" data-lang-switch="${lang.code}">
+                ${lang.code.toUpperCase()}
+              </button>
+              ${lang.code !== LANGUAGES[LANGUAGES.length-1].code ? '<span class="text-gray-300 dark:text-gray-600">|</span>' : ''}
+            `).join('')}
+          </div>
+          </div>
         </div>
       </div>
     </nav>
