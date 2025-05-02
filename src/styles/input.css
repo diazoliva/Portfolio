@@ -1,0 +1,8 @@
+/* Tailwind v4 one-liner */
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Fuente Inter + swap */
+@import "./fonts.css";
+
+@import "./base.css";

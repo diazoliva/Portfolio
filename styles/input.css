@@ -1,9 +1,0 @@
-/* 1. Tailwind import */
-@import "tailwindcss";
-
-/* 2. Custom Tailwind imports */
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* 3. General imports */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-@import "./base.css";
