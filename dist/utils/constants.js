@@ -104,7 +104,7 @@ export const translations = {
     heroAltImage: "Personal photo",
     heroTitle: "Hi, I'm Marcos",
     heroSubtitle: "IT Project Manager",
-    heroContactButton: "Contact Me",
+    heroContactButton: "Contact me",
     aboutTitle: "About Me",
     aboutParagraph1: "Initial experience in real development and team management projects. I led the Backend development at Valuat, achieving an improvement of up to 50% in endpoint performance compared to the previous technology and up to 30% in database calls. As a project manager, I provide service to two General Subdirectorates, managing teams from 3 different companies.",
     aboutParagraph2: "[Add more details if you wish, such as relevant interests, hobbies, or your work philosophy.]",
