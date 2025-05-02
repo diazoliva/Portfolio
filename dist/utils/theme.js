@@ -6,10 +6,7 @@ const ICONS      = { light: 'fa-sun', dark: 'fa-moon', system: 'fa-desktop' };
 /* --- helpers ------------------------------------------------------------ */
 function setButtonIcons(theme) {
   document.querySelectorAll('.theme-icon').forEach(icon => {
-    const effective = theme === 'system'
-        ? (mq.matches ? 'dark' : 'light')
-        : theme;
-    icon.className = `fa-solid ${ICONS[effective]} theme-icon text-lg`;
+    icon.className = `fa-solid ${ICONS[theme]} theme-icon text-lg`;
   });
 }
 
@@ -61,7 +58,7 @@ export function setupThemeDropdowns() {
     const togglePin = () => { pinned = !pinned; if (!pinned) hide(); };
     
     let leaveTimer;
-    const scheduleHide = () => { leaveTimer = setTimeout(hide, 120); };
+    const scheduleHide = () => { leaveTimer = setTimeout(hide, 240); };
     const cancelHide   = () => clearTimeout(leaveTimer);
 
     /* -- ① HOVER --------------------------------------------------------- */

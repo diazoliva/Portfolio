@@ -25,15 +25,6 @@ export function setupMobileMenu() {
   }
 }
 
-export function setupLanguageSwitch() {
-  document.querySelectorAll('[data-lang-switch]').forEach(button => {
-    button.addEventListener('click', () => {
-      const lang = button.getAttribute('data-lang-switch');
-      switchLanguage(lang);
-    });
-  });
-}
-
 export function setupSmoothScrolling() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

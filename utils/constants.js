@@ -7,9 +7,19 @@ export const NAV_LINKS = [
 ];
 
 export const LANGUAGES = [
-  { code: 'es', name: 'Español' },
-  { code: 'en', name: 'English' }
+  {
+    code: 'es',
+    flag: '🇪🇸',
+    names: { es: 'Español', en: 'Spanish' }
+  },
+  {
+    code: 'en',
+    flag: '🇬🇧',
+    names: { es: 'Inglés',  en: 'English' }
+  }
 ];
+
+
 
 export const translations = {
   es: {

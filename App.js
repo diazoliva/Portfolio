@@ -1,7 +1,7 @@
 import HomePage from './pages/Home.js';
 import routes from './router.js';
-import {setupSmoothScrolling, setupMobileMenu, setupLanguageSwitch} from './scripts/main.js';
-import {initializeLanguage, switchLanguage} from './utils/language.js';
+import {setupSmoothScrolling, setupMobileMenu} from './scripts/main.js';
+import {initializeLanguage, switchLanguage, setupLanguageDropdowns} from './utils/language.js';
 import { initTheme, setupThemeDropdowns } from './utils/theme.js';
 
 
@@ -60,7 +60,7 @@ export const loadPage = async () => {
   setupMobileMenu();
   setupSmoothScrolling();
   initializeLanguage();
-  setupLanguageSwitch();
+  setupLanguageDropdowns();
   initTheme();
   setupThemeDropdowns();
 

@@ -1,5 +1,9 @@
 import { translations } from './constants.js';
 
+export function getCurrentLanguage() {
+  return localStorage.getItem('lang') || 'es';
+}
+
 export function switchLanguage(lang) {
   document.documentElement.lang = lang;
   updateTextElements(lang);
@@ -44,6 +48,16 @@ function updateLanguageButtons(lang) {
     const isActive = buttonLang === lang;
     button.classList.toggle('active', isActive);
   });
+
+  document.querySelectorAll('.lang-current').forEach(el => el.textContent = lang.toUpperCase());
+
+  // actualiza etiquetas de opciones
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    const code = opt.dataset.langSwitch;
+    const txt  = LANGUAGES.find(l => l.code === code)?.names[lang] || code;
+    opt.querySelector('.lang-name').textContent = txt;
+  });
+  
 }
 
 function toggleContactForms(lang) {
@@ -91,4 +105,47 @@ export function initializeLanguage() {
   const langCode = (preferredLanguage || browserLanguage.split('-')[0]);
   const lang = langCode === 'en' ? 'en' : 'es';
   switchLanguage(lang);
+}
+
+export function setupLanguageDropdowns() {
+  const dds = Array.from(document.querySelectorAll('.lang-dropdown'));
+  if (!dds.length) return;
+
+  const closeAll = () =>
+    dds.forEach(d => d.querySelector('.lang-menu').classList.add('hidden'));
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.lang-dropdown')) closeAll();
+  });
+
+  dds.forEach(dd => {
+    const btn   = dd.querySelector('.lang-button');
+    const menu  = dd.querySelector('.lang-menu');
+    const items = dd.querySelectorAll('[data-lang-switch]');
+
+    let pinned = false, timer;
+
+    const open  = () => menu.classList.remove('hidden');
+    const hide  = () => !pinned && menu.classList.add('hidden');
+    const cancel = () => clearTimeout(timer);
+    const schedule = () => { timer = setTimeout(hide, 120); };
+    const togglePin = () => { pinned = !pinned; if (!pinned) hide(); };
+
+    /* Hover */
+    btn.addEventListener('mouseenter', () => { cancel(); open(); });
+    menu.addEventListener('mouseenter', cancel);
+    btn.addEventListener('mouseleave', schedule);
+    menu.addEventListener('mouseleave', schedule);
+
+    /* Click – pin/unpin */
+    btn.addEventListener('click', e => { e.stopPropagation(); togglePin(); open(); });
+
+    /* Selección de idioma */
+    items.forEach(it => it.addEventListener('click', () => {
+      const lang = it.dataset.langSwitch;
+      window.switchLanguage(lang);     // ya expuesto en App.js
+      pinned = false;
+      hide();
+    }));
+  });
 }

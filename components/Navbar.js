@@ -1,4 +1,5 @@
 import { NAV_LINKS, LANGUAGES } from '../utils/constants.js';
+import LanguageSwitcher from './LanguageSwitcher.js';
 
 export default function Navbar(isMenuHidden) {
   return `
@@ -54,11 +55,7 @@ export default function Navbar(isMenuHidden) {
             </ul>
           </div>
 
-          <div class="max-xl:hidden flex items-center space-x-2-200 pl-4">
-            <button class="lang-button text-sm text-gray-500 dark:text-gray-400 hover:text-indigo-900 dark:hover:text-indigo-200 px-2 cursor-pointer active" data-lang-switch="es">ES</button>
-            <span class="text-gray-300 dark:text-gray-600">|</span>
-            <button class="lang-button text-sm text-gray-500 dark:text-gray-400 hover:text-indigo-900 dark:hover:text-indigo-200 px-2 cursor-pointer" data-lang-switch="en">EN</button>
-          </div>
+          ${LanguageSwitcher()}
         </div>
 
         <button id="mobile-menu-button" class="xl:hidden text-gray-600 dark:text-gray-400 focus:outline-none cursor-pointer transition-colors duration-300">
@@ -101,14 +98,7 @@ export default function Navbar(isMenuHidden) {
               </li>
             </ul>
           </div>
-          <div class="flex justify-center items-center space-x-2-200 pl-4 ml-2">
-            ${LANGUAGES.map(lang => `
-              <button class="lang-button text-sm text-gray-500 dark:text-gray-400 hover:text-indigo-900 dark:hover:text-indigo-200 px-2 cursor-pointer ${lang.code === 'es' ? 'active' : ''}" data-lang-switch="${lang.code}">
-                ${lang.code.toUpperCase()}
-              </button>
-              ${lang.code !== LANGUAGES[LANGUAGES.length-1].code ? '<span class="text-gray-300 dark:text-gray-600">|</span>' : ''}
-            `).join('')}
-          </div>
+          ${LanguageSwitcher()}
           </div>
         </div>
       </div>
