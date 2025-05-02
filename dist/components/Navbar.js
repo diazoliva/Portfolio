@@ -1,5 +1,6 @@
-import { NAV_LINKS, LANGUAGES } from '../utils/constants.js';
+import { NAV_LINKS } from '../utils/constants.js';
 import LanguageSwitcher from './LanguageSwitcher.js';
+import ThemeSwitcher from './ThemeSwitcher.js';
 
 export default function Navbar(isMenuHidden) {
   return `
@@ -7,12 +8,12 @@ export default function Navbar(isMenuHidden) {
       <div class="container mx-auto px-6 flex justify-between items-center">
       
         <a href="/" class="flex justify-center items-center dark:hidden transition-opacity duration-700 ease-in-out opacity-100 dark:opacity-0">
-          <img src="./assets/images/purple_logo.webp" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2"/>
+          <img src="./assets/images/purple_logo.webp" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2" data-lang-alt="altLightLogoImage" alt="Logo de la página en modo claro que incluye una D y una O superpuestas"/>
           <div class="font-bold text-xl text-indigo-800 dark:text-indigo-200" data-lang="navName">Marcos Díaz Oliva</div>
         </a>
 
         <a href="/" class="hidden justify-center items-center dark:flex transition-opacity duration-700 ease-in-out opacity-0 dark:opacity-100">
-          <img src="./assets/images/dark_purple_logo.webp" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2"/>
+          <img src="./assets/images/dark_purple_logo.webp" class="w-16 h-16 md:w-24 md:h-24 object-cover mr-2" data-lang-alt="altDarkLogoImage" alt="Logo de la página en modo oscuro que incluye una D y una O superpuestas"/>
           <div class="font-bold text-xl text-indigo-800 dark:text-indigo-200" data-lang="navName">Marcos Díaz Oliva</div>
         </a>
 
@@ -31,30 +32,7 @@ export default function Navbar(isMenuHidden) {
         ` : ''}
 
         <div class="hidden xl:flex items-center space-x-2-200 pl-4">
-          <div class="relative theme-dropdown">
-            <button type="button" class="theme-button w-9 h-9 flex items-center justify-center rounded-full bg-indigo-50/70 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-200 hover:ring-2 hover:ring-indigo-500/40 transition cursor-pointer">
-              <i class="fa-solid fa-sun theme-icon text-lg"></i>
-            </button>
-
-            <ul class="theme-menu hidden absolute right-0 mt-3 w-40 rounded-lg shadow-lg bg-white/95 dark:bg-gray-900/95 backdrop-blur ring-1 ring-black/10 dark:ring-white/10 divide-y divide-gray-100 dark:divide-gray-800 select-none overflow-hidden">
-              <li>
-                <button data-theme="light" class="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700/60 cursor-pointer">
-                  <i class="fa-solid fa-sun"></i> Light
-                </button>
-              </li>
-              <li>
-                <button data-theme="dark" class="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700/60 cursor-pointer">
-                  <i class="fa-solid fa-moon"></i> Dark
-                </button>
-              </li>
-              <li>
-                <button data-theme="system" class="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700/60 cursor-pointer">
-                  <i class="fa-solid fa-desktop"></i> System
-                </button>
-              </li>
-            </ul>
-          </div>
-
+          ${ThemeSwitcher()}
           ${LanguageSwitcher()}
         </div>
 
@@ -75,29 +53,7 @@ export default function Navbar(isMenuHidden) {
       ` : ''}
       <div class="flex justify-center items-center space-x-2-200 pl-4">
           <div class="flex mt-2 pt-2 border-t border-gray-100 dark:border-gray-700 text-center">
-          <div class="relative theme-dropdown">
-            <button type="button" class="theme-button w-9 h-9 flex items-center justify-center rounded-full bg-indigo-50/70 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-200 hover:ring-2 hover:ring-indigo-500/40 transition cursor-pointer">
-              <i class="fa-solid fa-sun theme-icon text-lg"></i>
-            </button>
-
-            <ul class="theme-menu hidden absolute right-0 mt-3 w-40 rounded-lg shadow-lg bg-white/95 dark:bg-gray-900/95 backdrop-blur ring-1 ring-black/10 dark:ring-white/10 divide-y divide-gray-100 dark:divide-gray-800 select-none overflow-hidden">
-              <li>
-                <button data-theme="light" class="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700/60 cursor-pointer">
-                  <i class="fa-solid fa-sun"></i> Light
-                </button>
-              </li>
-              <li>
-                <button data-theme="dark" class="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700/60 cursor-pointer">
-                  <i class="fa-solid fa-moon"></i> Dark
-                </button>
-              </li>
-              <li>
-                <button data-theme="system" class="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-gray-700/60 cursor-pointer">
-                  <i class="fa-solid fa-desktop"></i> System
-                </button>
-              </li>
-            </ul>
-          </div>
+          ${ThemeSwitcher()}
           ${LanguageSwitcher()}
           </div>
         </div>

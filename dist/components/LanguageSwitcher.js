@@ -14,6 +14,7 @@ export default function LanguageSwitcher() {
                      text-indigo-800 dark:text-indigo-200
                      hover:ring-2 hover:ring-indigo-500/40
                      transition cursor-pointer select-none">
+        <span class="sr-only" data-lang="altLanguageButton">Elige el idioma a mostrar: español o inglés</span>
         <span class="lang-current text-sm font-semibold">${cur.toUpperCase()}</span>
       </button>
 

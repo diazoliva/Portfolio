@@ -8,12 +8,13 @@ export default function HomePage() {
     <header class="relative bg-cover bg-center bg-no-repeat pt-20 pb-15 rounded-b-xl shadow-xl" style="background-image: linear-gradient(rgba(120, 120, 131, 0.8), rgba(99, 94, 151, 0.8)), url(./assets/images/MIVAU.webp);">
         <div class="absolute inset-0 rounded-b-xl bg-gradient-to-b opacity-50 from-indigo-900 to-gray-400 opacity-60 dark:from-gray-900 dark:to-black dark:opacity-80 transition-opacity duration-500"></div>
         <div class="relative container mx-auto px-6 text-center text-gray-50 dark:text-gray-200">
-            <img src="./assets/images/personal.webp" alt="Foto personal" data-lang-alt="heroAltImage" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover"/>
+            <img src="./assets/images/personal.webp" alt="Foto personal" data-lang-alt="altPersonalImage" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover"/>
             <h1 class="text-4xl md:text-5xl font-bold mb-2" data-lang="heroTitle"> Hola, soy Marcos </h1>
             <p class="text-xl md:text-2xl mb-8" data-lang="heroSubtitle"> Gestor de Proyectos Informáticos </p>
             <a href="contact" class="bg-white text-indigo-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md" data-lang="heroContactButton"> Contáctame </a>
             <a href="#sobre-mi" class="block mx-auto mt-12 cursor-pointer animate-bounce text-3xl text-white dark:text-gray-200">
-                <i class="fa-solid fa-chevron-down"></i>
+                <span class="sr-only" data-lang="altArrowAboutMeButton">Desplazarse a la sección: Sobre mí</span>
+              <i class="fa-solid fa-chevron-down"></i>
             </a>
         </div>
     </header>
@@ -37,7 +38,7 @@ export default function HomePage() {
             <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800 dark:text-indigo-200" data-lang="projectsTitle">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/600x400/e0e7ff/4f46f5?text=Proyecto+1" alt="[Imagen de Proyecto 1]" data-lang-alt="project1AltImage" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/600x400/e0e7ff/4f46f5?text=Proyecto+1" data-lang-alt="altProyect1Image" alt="[Imagen de Proyecto 1]" data-lang-alt="project1AltImage" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100" data-lang="project1Title">Servicio web de Tests</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4" data-lang="project1Desc">
@@ -52,7 +53,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/600x400/dbeafe/3b82f6?text=Proyecto+2" alt="[Imagen de Proyecto 2]" data-lang-alt="project2AltImage" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/600x400/dbeafe/3b82f6?text=Proyecto+2" data-lang-alt="altProyect2Image" alt="[Imagen de Proyecto 2]" data-lang-alt="project2AltImage" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100" data-lang="project2Title">Web scripting para Estadística de Datos</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4" data-lang="project2Desc">
@@ -67,7 +68,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
-                     <img src="https://placehold.co/600x400/ccfbf1/14b8a6?text=Proyecto+3" alt="[Imagen de Proyecto 3]" data-lang-alt="project3AltImage" class="w-full h-48 object-cover">
+                     <img src="https://placehold.co/600x400/ccfbf1/14b8a6?text=Proyecto+3" data-lang-alt="altProyect3Image" alt="[Imagen de Proyecto 3]" data-lang-alt="project3AltImage" class="w-full h-48 object-cover">
                      <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100" data-lang="project3Title">Videojuego Gálaga</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4" data-lang="project3Desc">

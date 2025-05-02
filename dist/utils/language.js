@@ -1,4 +1,5 @@
 import { translations } from './constants.js';
+import { LANGUAGES } from './constants.js';
 
 export function getCurrentLanguage() {
   return localStorage.getItem('lang') || 'es';

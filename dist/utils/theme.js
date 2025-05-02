@@ -58,7 +58,7 @@ export function setupThemeDropdowns() {
     const togglePin = () => { pinned = !pinned; if (!pinned) hide(); };
     
     let leaveTimer;
-    const scheduleHide = () => { leaveTimer = setTimeout(hide, 240); };
+    const scheduleHide = () => { leaveTimer = setTimeout(hide, 120); };
     const cancelHide   = () => clearTimeout(leaveTimer);
 
     /* -- ① HOVER --------------------------------------------------------- */
