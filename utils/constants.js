@@ -97,6 +97,9 @@ export const translations = {
     contactFormLabelMessage: "Mensaje",
     contactFormInputMessage: "Escribe aquí tu consulta o mensaje...",
     contactFormSend: "Enviar",
+    themeLight: "Claro",
+    themeDark: "Oscuro",
+    themeSystem: "Sistema",
 },
   en: {
     contactTitlePage: "Contact - Marcos Díaz Oliva",
@@ -182,5 +185,8 @@ export const translations = {
     contactFormLabelMessage: "Message",
     contactFormInputMessage: "Write your inquiry or message here...",
     contactFormSend: "Send",
+    themeLight: "Light",
+    themeDark: "Dark",
+    themeSystem: "System",
   }
 };

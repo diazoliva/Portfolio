@@ -2,12 +2,10 @@ import HomePage from './pages/Home.js';
 import routes from './router.js';
 import {setupSmoothScrolling, setupMobileMenu, setupLanguageSwitch} from './scripts/main.js';
 import {initializeLanguage, switchLanguage} from './utils/language.js';
-import { initDarkMode, toggleDarkMode, setupThemeToggle } from './utils/theme.js';
+import { initTheme, setupThemeDropdowns } from './utils/theme.js';
 
 
 // para poder llamarlo desde el HTML
-window.toggleDarkMode = toggleDarkMode;
-
 window.switchLanguage = switchLanguage;
 const app = document.getElementById('app');
 
@@ -63,8 +61,8 @@ export const loadPage = async () => {
   setupSmoothScrolling();
   initializeLanguage();
   setupLanguageSwitch();
-  initDarkMode();
-  setupThemeToggle();
+  initTheme();
+  setupThemeDropdowns();
 
   // Forzar reflujo para que la transición entre
   void app.offsetWidth;
