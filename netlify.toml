@@ -4,9 +4,6 @@
   # Carpeta que contiene los archivos estáticos tras build
   publish = "dist"
 
-[[plugins]]
-  package = "@netlify/plugin-vite"
-
 # Si tu app es un SPA (Single Page Application), añade esto para que
 # todas las rutas se redirijan al index.html:
 [[redirects]]
