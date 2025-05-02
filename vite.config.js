@@ -2,11 +2,11 @@ import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  root: '.',                  // (por defecto)
+  root: '.',
   build: {
-    outDir: 'dist',           // carpeta que subirá Netlify
+    outDir: 'dist',
     emptyOutDir: true,
-    rollupOptions: {          // 1 solo bundle
+    rollupOptions: {
       input: 'index.html',
       output: { manualChunks: undefined }
     }

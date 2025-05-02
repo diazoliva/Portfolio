@@ -6,13 +6,9 @@ const ICONS      = { light: 'fa-sun', dark: 'fa-moon', system: 'fa-desktop' };
 /* --- helpers ------------------------------------------------------------ */
 function setButtonIcons(theme) {
   document.querySelectorAll('.theme-icon').forEach(icon => {
-    const effective = theme === 'system'
-      ? (mq.matches ? 'dark' : 'light')
-      : theme;
-    
-        icon.classList.remove('fa-sun', 'fa-moon', 'fa-desktop');
-        icon.classList.add(ICONS[effective]);
-      });
+    icon.classList.remove('fa-sun', 'fa-moon', 'fa-desktop');
+    icon.classList.add(ICONS[theme]);
+  });
 }
 
 export function applyTheme(theme) {

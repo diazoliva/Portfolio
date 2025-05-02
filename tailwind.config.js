@@ -2,8 +2,8 @@ module.exports = {
   darkMode: 'class',
   content: [
     './index.html',
-    './src/**/*.{js,html}',   // ← Vite empaqueta todo en src
-    './src/styles/input.css'     // ✅ si usas @apply en CSS
+    './src/**/*.{js,html}',
+    './src/styles/input.css'
   ],
   safelist: [
     'fa-sun','fa-moon','fa-desktop','fa-bars','fa-xmark',

@@ -79,7 +79,7 @@ npm run preview        # http://localhost:4173
 
 
 
-## Available NPM Scripts
+## 📜 Available NPM Scripts
 
 | Command           | Purpose                                         |
 | ----------------- | ----------------------------------------------- |
